@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+.mega-card-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Varela Round;
+
+  .individual-card {
+    background-color: #f8f8ff;
+    margin: 2rem auto;
+    width: 30%;
+    height: 10%;
+    border-radius: 5%;
+    padding: 1%;
+    h1 {
+      font-size: 2em;
+      text-align: center;
+      margin: 8px;
+    }
+
+    p {
+      font-size: 1.1em;
+      text-align: center;
+      margin: 0;
+    }
+    .img-proyecto {
+      width: 100%;
+    }
+    .boton-visitar {
+      background-color: rgb(196, 67, 78);
+      color: white;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      border-radius: 5px;
+      width: 100%;
+      cursor: pointer;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .mega-card-portfolio {
+    display: block;
+    .individual-card {
+      width: 100%;
+      border-radius: 5%;
+      padding: 0%;
+      margin: 2rem auto;
+    }
+  }
+}

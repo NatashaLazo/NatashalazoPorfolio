@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+.About {
+  background-color: #f8f8ff;
+  display: flex;
+  font-family: Varela Round;
+
+  margin: 8px auto;
+  width: 80%;
+  padding: 1rem;
+  border-radius: 3%;
+
+  .img-container {
+    display: flex;
+    justify-content: center;
+    .img-perfil {
+      width: 80%;
+      border-radius: 140px;
+    }
+  }
+
+  .descripcion {
+    justify-content: center;
+    padding-top: 0em;
+    h1 {
+      display: flex;
+      justify-content: center;
+      color: hsla(0, 0%, 0%, 0.9);
+      font: normal 3em Varela Round, sans-serif;
+
+      letter-spacing: 5px;
+
+      text-align: center;
+      text-transform: uppercase;
+
+      animation: move linear 2000ms infinite;
+    }
+    h2 {
+      display: flex;
+      justify-content: center;
+      font-size: 2em;
+    }
+    p {
+      display: flex;
+      justify-content: center;
+      font-size: 1.1em;
+    }
+    .skilss {
+      display: flex;
+      flex-wrap: wrap;
+      .skill {
+        background-color: rgb(196, 67, 78);
+        color: white;
+        margin: 0.3rem;
+        padding: 0.8rem;
+        border-radius: 6%;
+      }
+    }
+  }
+}
+
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 hsla(0, 100%, 50%, 1),
+      3px -3px 0 hsla(0, 100%, 50%, 1), 2px -2px 0 hsla(0, 100%, 50%, 1),
+      1px -1px 0 hsla(0, 100%, 50%, 1), -4px 4px 0 hsla(180, 100%, 50%, 1),
+      -3px 3px 0 hsla(180, 100%, 50%, 1), -2px 2px 0 hsla(180, 100%, 50%, 1),
+      -1px 1px 0 hsla(180, 100%, 50%, 1);
+  }
+  25% {
+    text-shadow: -4px -4px 0 hsla(180, 100%, 50%, 1),
+      -3px -3px 0 hsla(180, 100%, 50%, 1), -2px -2px 0 hsla(180, 100%, 50%, 1),
+      -1px -1px 0 hsla(180, 100%, 50%, 1), 4px 4px 0 hsla(0, 100%, 50%, 1),
+      3px 3px 0 hsla(0, 100%, 50%, 1), 2px 2px 0 hsla(0, 100%, 50%, 1),
+      1px 1px 0 hsla(0, 100%, 50%, 1);
+  }
+  50% {
+    text-shadow: -4px 4px 0 hsla(0, 100%, 50%, 1),
+      -3px 3px 0 hsla(0, 100%, 50%, 1), -2px 2px 0 hsla(0, 100%, 50%, 1),
+      -1px 1px 0 hsla(0, 100%, 50%, 1), 4px -4px 0 hsla(180, 100%, 50%, 1),
+      3px -3px 0 hsla(180, 100%, 50%, 1), 2px -2px 0 hsla(180, 100%, 50%, 1),
+      1px -1px 0 hsla(180, 100%, 50%, 1);
+  }
+  75% {
+    text-shadow: 4px 4px 0 hsla(180, 100%, 50%, 1),
+      3px 3px 0 hsla(180, 100%, 50%, 1), 2px 2px 0 hsla(180, 100%, 50%, 1),
+      1px 1px 0 hsla(180, 100%, 50%, 1), -4px -4px 0 hsla(0, 100%, 50%, 1),
+      -3px -3px 0 hsla(0, 100%, 50%, 1), -2px -2px 0 hsla(0, 100%, 50%, 1),
+      -1px -1px 0 hsla(0, 100%, 50%, 1);
+  }
+  100% {
+    text-shadow: 4px -4px 0 hsla(0, 100%, 50%, 1),
+      3px -3px 0 hsla(0, 100%, 50%, 1), 2px -2px 0 hsla(0, 100%, 50%, 1),
+      1px -1px 0 hsla(0, 100%, 50%, 1), -4px 4px 0 hsla(180, 100%, 50%, 1),
+      -3px 3px 0 hsla(180, 100%, 50%, 1), -2px 2px 0 hsla(180, 100%, 50%, 1),
+      -1px 1px 0 hsla(180, 100%, 50%, 1);
+  }
+}
+
+@media (max-width: 1024px) {
+  .About {
+    width: 85%;
+    padding: 2rem;
+    border-radius: 7%;
+    .img-container .img-perfil {
+      width: 85%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .About {
+    width: 100%;
+    padding: 0rem;
+    .img-container {
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .About {
+    display: block;
+    .img-container {
+      width: 100%;
+      padding-top: 0em;
+      .img-perfil {
+        width: 65%;
+      }
+    }
+    .descripcion {
+      padding-top: 0em;
+      h1 {
+        display: block;
+        letter-spacing: 2px;
+        top: 15%;
+        width: 102%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .About {
+    display: block;
+
+    border-radius: inherit;
+    margin: auto;
+    .img-container {
+      padding-top: 0em;
+    }
+
+    .descripcion {
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
