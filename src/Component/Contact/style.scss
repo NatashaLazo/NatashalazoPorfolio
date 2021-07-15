@@ -60,6 +60,14 @@
 @media (max-width: 480px) {
   .contacto-container {
     padding: 3em;
+    margin: auto;
+  }
+}
+
+@media (max-width: 411px) {
+  .contacto-container {
+    padding: 6em;
+    margin: auto;
   }
 }
 
