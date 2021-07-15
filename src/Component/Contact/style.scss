@@ -1,53 +1,66 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
 .contacto-container {
-  background-color: #f8f8ff;
-  font-family: Varela Round;
-  margin: 8px auto;
-  width: 30%;
   display: flex;
-  justify-content: center;
-  padding: 1em;
-  padding-bottom: 2em;
-  border-radius: 14%;
-  h2 {
+  flex-wrap: wrap;
+  font-family: Varela Round;
+  background-color: #f8f8ff;
+  margin: 2rem auto;
+  width: 30%;
+  height: 10%;
+  border-radius: 5%;
+  padding: 1%;
+
+  .contacto-title {
+    background-color: rgb(196, 67, 78);
+    color: white;
+    outline: none;
+    border: none;
+    text-decoration: none;
     display: flex;
     justify-content: center;
-    font-size: 1.5em;
-    margin: 0;
-
-    font-weight: bold;
-    padding-bottom: 1em;
+    align-items: center;
+    height: 50px;
+    border-radius: 5px;
+    width: 100%;
+    h2 {
+      font-size: 2em;
+      font-weight: normal;
+      text-align: center;
+      margin: 8px;
+    }
   }
 
-  .mails-container {
+  .gmail-container {
     display: flex;
-    flex-direction: column;
-    .gmail-container {
-      display: inline-block;
-      font-size: 1.2em;
-      font-weight: 700;
-      .text-gmail {
-        color: black;
+    align-items: center;
+    .img-gmail {
+      padding: 1em;
+    }
+    .text-gmail {
+      color: black;
+    }
+  }
+  .linkedin-container {
+    display: flex;
+    align-items: center;
+    .img-linkedin {
+      padding: 1em;
+    }
+    .text-linkedin {
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+      &:hover {
+        color: rgb(196, 67, 78);
       }
     }
-    .linkedin-container {
-      display: inline-block;
-      font-size: 1.2em;
-      font-weight: 700;
-      .img-linkedin {
-        display: flex;
-        padding-bottom: 1.1em;
-      }
-      .text-linkedin {
-        text-decoration: none;
-        color: black;
-        cursor: pointer;
-        &:hover {
-          color: rgb(196, 67, 78);
-        }
-      }
-    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .contacto-container {
+    width: 40%;
   }
 }
 
@@ -59,21 +72,18 @@
 
 @media (max-width: 480px) {
   .contacto-container {
-    padding: 3em;
-    margin: auto;
+    width: auto;
   }
 }
 
 @media (max-width: 411px) {
   .contacto-container {
-    padding: 6em;
-    margin: auto;
+    padding: 1em;
   }
 }
 
 @media (max-width: 360px) {
   .contacto-container {
-    padding: 6em;
-    margin: auto;
+    padding: 1em;
   }
 }
